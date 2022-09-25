@@ -287,7 +287,7 @@ ul {
         background-color: #f2f2f2;;
         opacity: .9;
         z-index: 5;
-        width: 40%;
+        
         padding: 1rem 3rem;
         border-right: 1px solid #ccc;
         height: 100%;
@@ -314,10 +314,23 @@ ul {
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
+    .footer-nav {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer-contact{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-contact ul {
+        flex-direction: column;
+    }
 }
 
 @media(max-width: 500px) {
     .cards {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-nav {
+        grid-template-columns: repeat(1,1fr);
     }
 }
